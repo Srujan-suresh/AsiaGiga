@@ -10,8 +10,8 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-<link rel="icon" href="images/favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="images/icons/android-chrome-192x192.png" type="image/x-icon">
+<link rel="icon" href="images/icons/android-chrome-192x192.png" type="image/x-icon">
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -55,6 +55,28 @@
 			</div>
 		</div>
 		
+<style>.logo {
+  position: relative;
+  top: -10px;  /* Adjust the value as needed */
+}
+.sticky-header {
+  display: none !important;
+}
+
+</style>
+
+<script>
+window.addEventListener("scroll", function () {
+  const header = document.querySelector(".header-lower");
+
+  if (window.scrollY > 50) {
+    header.style.display = "none";
+  } else {
+    header.style.display = "block";
+  }
+});
+</script>
+
         <!-- Header Lower -->
         <div class="header-lower">
             
@@ -62,7 +84,7 @@
 				<div class="inner-container clearfix">
 					
 					<div class="pull-left logo-box">
-						<div class="logo"><a href="index.html"><img src="logoresize.jpg" style="height:100px; width:100px;" alt="" title=""></a></div>
+						<div class="logo"><a href="index.html"><img src="logoresize.jpg" style="height:100px; width:140px;" alt="" title=""></a></div>
 					</div>
 					<div class="nav-outer clearfix">
 						
@@ -193,7 +215,7 @@
             <div class="auto-container clearfix">
                 <!-- Logo -->
                 <div class="logo pull-left">
-                    <a href="index.html" title=""><img src="logoresize.jpg" style="height:100px; width:100px;" alt="" title=""></a>
+                    <a href="index.html" title=""><img src="logoresize.jpg" style="height:100px; width:140px;" alt="" title=""></a>
                 </div>
 				
                 <!--Right Col-->
@@ -260,7 +282,7 @@
             <div class="close-btn"><span class="icon flaticon-multiply"></span></div>
             
             <nav class="menu-box">
-                <div class="nav-logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a></div>
+                <div class="nav-logo"><a href="index.html"><img src="logoresize.jpg" alt="" title=""></a></div>
                 <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
             </nav>
         </div><!-- End Mobile Menu -->
@@ -284,7 +306,7 @@
 					<div class="sidebar-info-contents">
 						<div class="content-inner">
 							<div class="logo">
-								<a href="index.html"><img src="images/logo-2.png" alt="" /></a>
+								<a href="index.html"><img src="logoresize.jpg" alt="" /></a>
 							</div>
 							<div class="content-box">
 								<h5>About Us</h5>
